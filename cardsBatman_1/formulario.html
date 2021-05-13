@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman</title>
+    <!-- Linkearlo con font-awesom-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style_forms.css">
+</head>
+
+<body>
+    <div class="descuento">
+        <p> 20% de descuento en todos los productos!</p>
+    </div>
+    <header>
+        <div class="principal">
+            <a href="·"><img src="img/logo.jpg" alt="logo" class="logo tienda"></a>
+            <!-- Acá va la imágen de la tienda -->
+            <h1>Nombre Tienda</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Contacto</a>
+                </li>
+                <li>
+                    <a href=""> registrarme </a>
+                </li>
+                <li>
+                    <a href=""> ingresar </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="login">
+            <h3>Añadí tu super!</h3>
+            <h4>Agregá tu personaje favorito completando las opciones.</h4>
+            <form action="contacto.html" method="POST">
+                <div>
+                    <div>
+                        <label for="nombre">* Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Juan" required>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="apellido">* Apellido</label>
+                            <input type="text" id="apellido" name="apellido" placeholder="Perez">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label for="nacimiento">Fecha</label>
+                            <input type="date" id="nacimiento" name="nacimiento">
+                        </div>
+                        <div>
+                            <label for="doc">Agregar foto</label>
+                            <input type="file" id="doc" accept=".jpg, .pdf, .png" name="doc" multiple>
+                        </div>
+                    </div>
+
+                    <div>
+
+                        <div>
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje"></textarea>
+                        </div>
+                        <div>
+
+                            <p>Poderes</p>
+                            <input type="checkbox" id="poder1" name="Poderes" value="HTML">
+                            <label for="poder1"> Volar</label>
+                            <input type="checkbox" id="poder2" name="Poderes" value="CSS">
+                            <label for="poder2"> SuperInteligencia</label>
+                            <input type="checkbox" id="poder3" name="Poderes" value="JS">
+                            <label for="poder3">Vista de rayo láser</label>
+                            <input type="checkbox" id="poder4" name="Poderes" value="JS">
+                            <label for="poder4">Billetera gorda</label>
+
+
+
+                            <p>Tipo de pensonaje</p>
+                            <label for="documento1" class="vert"> <input type="radio" id="documento1" name="documento"
+                                    value="DNI">
+                                Héroe / Heroina </label>
+                            <!-- Le ponemos el class con el label xq es más fácil después darle estilos con CSS -->
+                            <label for="documento2" class="vert"><input type="radio" id="documento2" name="documento"
+                                    value="CUIL">
+                                Villano / Villana </label>
+
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Enviar">
+                    <!-- Para enviar o eliminar todo usamos estas etiquetas. El type es lo que determina lo que el botón hará -->
+                    <input type="reset" value="Resetear">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+
+</html>

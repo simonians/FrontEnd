@@ -1,0 +1,213 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --primario: #F0A83E;
+  --colorSecundario:#222222;
+  --colorTercero: #3C2313;
+  --colorCuarto: #E5E5E5;
+  --white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+body{
+  background-color: var(--colorCuarto);
+  display: flex;
+  flex-direction: column;
+}
+
+body .ofertas {
+  background-color: var(--colorSecundario);
+  display: flex;
+  justify-content: space-between;
+  color: var(--colorCuarto);
+  padding: 2px 15px;
+}
+body .ofertas ul{
+  display: flex;
+}
+
+li{
+  color: var(--colorCuarto);
+}
+
+li a {
+  text-decoration: none;
+  color: var(--colorCuarto);
+}
+
+
+header {
+  background-color: var(--primario);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+header .logo{
+  display: flex;
+}
+h1 {
+  color: var(--colorCuarto);
+}
+span {
+  color: var(--colorTercero);
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 150px;
+}
+header nav ul {
+  display: flex;
+  padding: 10px;
+  width: 30vw;
+  justify-content: space-evenly;
+}
+
+header nav ul .manito{
+  color: var(--colorCuarto);
+}
+
+header div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+header div .iconoHeader{
+  color: var(--colorCuarto);
+}
+
+section {
+  display: flex;
+    flex-direction: column;
+    gap: 1em;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100vw;
+    height: 30em;
+    padding-top: 15px;
+}
+
+h2{
+  color: var(--colorTercero);
+  font-size: 2em;
+}
+
+h6{
+  color: var(--colorTercero);
+  font-size: 0.9em;
+}
+
+.conteiner {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90vw;
+}
+
+.card {
+  background-color: #FBFAF6;
+
+}
+
+.card-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-top: 0.2px rgba(0, 0, 0, 0.1) dotted;
+  
+}
+
+.card-img{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+footer{
+  background-color: var(--colorSecundario);
+  color: var(--colorCuarto);
+  display: flex;
+  justify-content: center;
+}
+
+.kangrebur {
+  display: none;
+}
+
+/* li::after */
+body .ofertas ul li::after {
+  content: ">";
+  margin-left: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 440px) {
+  .kangrebur {
+    display: block;
+    color: var(--color--primario);
+    font-size: 30px;
+    padding-right: 20px;
+  }
+  .ofertas{
+    font-size: 10px;
+  }
+  
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 10px;
+  }
+
+  nav{
+    display: none;
+  }
+  .iconos{
+    display: none;
+  }
+  
+  section{
+    height: 80em;
+    display: flex;
+    justify-content: center;
+  }
+  section .conteiner{
+    display: flex;
+  justify-content: space-evenly;
+  width: 90vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  }
+  
+
+
+}
+
+
+
+
+
+
+

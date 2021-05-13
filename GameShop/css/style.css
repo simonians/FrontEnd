@@ -1,0 +1,321 @@
+/* GoogleFonts - Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+:root {
+    --color--menu: #222222;
+    --color--primario: #F3F3F3;
+    --color--secundario: #D01418;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* header */
+
+header {
+    background-color: var(--color--menu);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 38px 35px 20px 35px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 700;
+    margin-left: 20px;
+    font-size: 25px;
+    color: var(--color--primario);
+}
+span {
+    color: var(--color--secundario);
+    font-weight: 400;
+}
+
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li a {
+    color: var(--color--primario);
+    font-size: 1.2rem;
+    padding: 4px;
+}
+.carrito {
+    margin: 38px 35px 38px 46px;
+    color: var(--color--secundario);
+}
+
+/* Main */
+
+.hero {
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section div h3 {
+    color: var(--color--primario);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.botonCompra {
+    background-color: var(--color--secundario);
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 20%;
+    color: var(--color--primario);
+    transition: padding 5s;
+}
+
+.botonCompra :hover {
+    padding: 5px;
+    transition: all 2s;
+}
+
+.botonCompra a {
+    color: var(--color--primario);
+    font-size: 20px;
+}
+
+.botonCompra a:hover {
+    color: var(--color--primario);
+    font-size: 25px;
+}
+
+.portada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+    top: 652px;
+    left: 94px;
+    background-color: var(--color--primario);
+}
+
+h2 {
+    font-size: 40px;
+    padding-top: 40px;
+    margin-bottom: 14px;
+    font-weight: 300;
+}
+
+section .conteiner {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 85px;
+}
+
+div.cards {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 265px;
+    height: 322px;
+    transition: all 1s;
+}
+
+section .conteiner :hover{
+    transform: scale(1.1);
+}
+
+.card-img {
+    padding: 30px 68px;
+    border-bottom: 0.2px rgba(0, 0, 0, 0.2) dotted;
+}
+
+.card-text {
+    align-self: flex-start;
+    padding: 10px 0px 10px 15px;
+}
+
+.card-text h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+.card-text h5 {
+    font-size: 13px;
+    font-weight: 400;
+}
+.card-text h6 {
+    font-size: 10px;
+    font-weight: 400;
+    color: #619D00;
+}
+
+
+.conteiner_banner { 
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 85px;
+}
+
+.banner-img{ 
+    margin: 20px 114px 85px 94px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.banner-img p{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: var(--color--primario);
+    font-size: 25px;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.primerFoot {
+    display: flex;
+    justify-content: space-around;
+    height: 216px;
+    background-color: var(--color--menu);
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    margin-right: 100px;
+}
+.logo h4 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+.redes h4 {
+    color: var(--color--primario);
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.redes ul { 
+    display: flex;
+    gap: 42px;
+}
+
+.tw {
+    color:#14AED0;
+    font-size: 30px;
+}
+.fb {
+    color: #1476D0;
+    font-size: 30px;
+}
+.ig {
+    color: #CE0CFF;
+    font-size: 30px;
+}
+.segundoFoot {
+    background-color: #C4C4C4;
+}
+
+.segundoFoot p {
+    text-align: center;
+    color: var(--color--menu);
+}
+
+.kangrebur {
+    display: none;
+}
+
+/* animaciones */
+
+
+
+
+@media screen and (max-width: 850px) {
+    .kangrebur {
+        display: block;
+        color: var(--color--primario);
+        font-size: 30px;
+        padding-right: 20px;
+    }
+    nav{
+        display: none;
+      }
+    section div h3 {
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .portada {
+        height: auto;
+    }
+    section .conteiner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards {
+        margin-bottom: 20px;
+    }
+    section .conteiner_banner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-img {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .primerFoot {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .logo {
+        margin: 0;
+    }
+    .redes {
+        margin: 0;
+    }
+}
+
+

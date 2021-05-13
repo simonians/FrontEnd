@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameShop</title>
+    <!-- fontawesom -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"/>
+    <!-- link css -->
+    <link rel="stylesheet" href="css/style_forms.css"/>
+</head>
+
+<body>
+    <div id="login">
+        <h3>Complete los datos para acceder al <span>25% de descuento</span></h3>
+        <form action="contacto.html" method="POST" > <!-- Le digo que la info suministrada la envíe al archivo contacto.html. Usar método POST-->
+            <div class="campoBasico">
+                <label for="nombre">Nombre (obligatorio)</label> <!-- El valor del atributo for debe ser el mismoo que el valor del atributo id en la etiqueta input. Le indicamos que debe ingresar el usuario -->
+                <input type="text" id="nombre" name="nombre" placeholder="Juan" required > <!-- Con input indicamos el tipo de dato que se ingresará, como se llamará la columna en el guardado y si es obligatorio o no el campo -->    
+            </div>
+            <div class="campoBasico">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Perez">
+            </div>
+            <div class="campoBasico">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="alguien@mail.com">
+            </div>
+            <div class="campoBasico">
+                <label for="tel">Tel(obligatorio)</label>
+                <input type="tel" id="tel" name="tel" placeholder="12345678901" required>
+            </div>
+            <div class="campoBasico">
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="pass">
+            </div>
+            <div class="campoBasico">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje"></textarea>
+            </div>
+            <div class="nacionalidad" >
+                <label for="pais">Seleccione su nacionalidad:</label>
+            <select name="País" id="pais"> 
+                <option value="Argentina">Argentina</option> 
+                <option value="Brasil">Brasil</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Venezuela">Venezuela</option>
+            </select>
+            </div>
+            <div class="boton">
+                <input type="submit" value="Enviar">  
+                <input type="reset" value="Resetear">
+            </div>
+        </form>
+    </div>
+</body>
+
+
+
+</html>
