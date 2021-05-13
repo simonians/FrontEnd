@@ -1,0 +1,11 @@
+.contacto {
+    width: 300px;
+    margin: 30px auto;
+   }
+   textarea {
+    height: 251px;
+    width: 620px;
+    position: relative;
+    top: 200px;
+    right: 100px;
+  }

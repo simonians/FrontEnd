@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Karla&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap" rel="stylesheet">
+
+    <title>Registro</title>
+</head>
+
+<body>
+    <div class="descuento">
+        <p>20% de descuento en todos los productos!</p>
+    </div>
+    <header>
+        <h1><img class="logoTienda" src="img/logo.jpg">Super Heroes Tienda</h1>
+    </header>
+    <main class="mainReg">
+        <div class="registro">
+            <h3 class="registro">Registro</h3>
+            <form action="login.html" method="POST">
+                <p>
+                    <label for="nombreApellido"></label>
+                    <input type="text" name="nombreApellido" id="nombreApellido" placeholder=" Nombre y Apellido"
+                        required>
+                </p>
+
+                <p>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder=" Email" required>
+
+                </p>
+                <p>
+                    <label for="password"></label>
+                    <input type="password" name="password" id="password" placeholder=" Contraseña"
+                        required>
+                </p>
+                <p>
+                    <label for="pais"></label>
+                    <select name="pais" id="pais" placeholder=" País"
+                        required>
+                        <option value="Argentina">País</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Argentina">Colombia</option>
+                        <option value="Argentina">Brasil</option>
+                    </select>
+                </p>
+                <input  class="bottonGrs" type="reset" value="Resetear">
+                <input  class="bottonVde" type="submit" value="Entrar">
+            </form>
+            <a class="linkAlLog"href="login.html">¿Ya tenes una cuenta? Ingresar</a> 
+        </div>
+    </main>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+
+</html>
