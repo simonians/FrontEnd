@@ -1,96 +1,69 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Batman</title>
-    <!-- Linkearlo con font-awesom-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" />
-    <!-- CSS -->
+    <title>Card Supers Heroes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
+ 
 </head>
-
-
 <body>
     <div class="descuento">
-        <p> 20% de descuento en todos los productos!</p>
+        <p>20% de descuento en todos los productos!</p>
     </div>
     <header>
-        <div class="principal">
-            <a href="·"><img src="img/logo.jpg" alt="logo" class="logo tienda"></a>
-            <!-- Acá va la imágen de la tienda -->
-            <h1>Nombre Tienda</h1>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Contacto</a>
-                </li>
-                <li>
-                    <a href=""> registrarme </a>
-                </li>
-                <li>
-                    <a href=""> ingresar </a>
-                </li>
-            </ul>
+        <h1> <img class="logoTienda" src="img/logo.jpg"> Super Heroes Tienda</h1>
+
+        <nav class="navegador">
+            <a href="contacto.html" target="_blank">Contacto</a> 
+            <a href="registros.html" target="_blank">Registrarme</a>
+        <a href="login.html" target="_blank">Ingresar</a>
         </nav>
-    </header>
 
+    </header>
     <main>
-        <div class="flex-box">
-            <!-- Batman -->
-            <div class="cards">
-                <div class="back Batman">
-                    <i class="fas fa-heart"></i>
-                </div>
-                <img src="img/perfilBatman.png" class="perfil">
-                <div>
-                    <h2 class="tituloCard"> Batman </h2>
-                    <p class="textoCard">
-                        Bruce Wayne es el único personaje que se identifica como Batman y aparece en Batman, Detective
-                        Comics, Batman y Robin, y Batman: The Dark Knight. Dick Grayson vuelve al manto de Nightwing
-                    </p>
-                    <a href="#" class="verMas">Ver más</a>
-                </div>
+        <div class="card">
+            <div class="backBatman">
+                <i class="fas fa-heart"></i>
             </div>
-            <!-- HEarly -->
-            <div class="cards">
-                <div class="back Hearly"><i class="fas fa-heart"></i></div>
-                <img src="img/hearly queen.png" class="perfil">
-                <div> 
-                    <h2 class="tituloCard"> Mujer Maravilla </h2>
-                    <p class="textoCard">
-                        El personaje apareció como tal publicado por primera vez en la revista de historietas All Star
-                        Comics (de diciembre de 1941)1​ y con su alter-ego en el Sensation Comics
-                    </p>
-                    <a href="#" class="verMas">Ver más</a>
-                </div>
-            </div>
-            <!-- Superman -->
-            <div class="cards">
-                <div class="back Superman"><i class="fas fa-heart"></i></div>
-                <img src="img/perfil_superman.png" class="perfil">
-                <div>
-                    <h2 class="tituloCard"> Superman </h2>
-                    <p class="textoCard">
-                        El personaje apareció como tal publicado por primera vez en la revista de historietas All Star
-                        Comics (de diciembre de 1941)1​ y con su alter-ego en el Sensation Comics
-                    </p>
-                    <a href="#" class="verMas">Ver más</a>
-                </div>
+            <div class="contenido">
+                <img src="img/perfilBatman.png" alt="batman">
+                <h2>BATMAN</h2>
+                <p class="texto">Bruce Wayne es el único personaje que se identifica como Batman y aparece en Batman, Detective
+                    Comics, Batman y Robin, y Batman: The Dark Knight. Dick Grayson vuelve al manto de Nightwing</p>
+                <a class="verMas" href="#">Ver mas</a>
             </div>
         </div>
+        <div class="card">
+            <div class="backHearly">
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="contenido">
+                <img src="img/hearly queen.png" alt="hearly">
+                <h2>Hearly Queen</h2>
+                <p class="texto">El personaje apareció como tal publicado por primera vez en la revista de historietas All Star Comics
+                    (de diciembre de 1941)1​ y con su alter-ego en el Sensation Comics</p>
+                <a class="verMas" href="#">Ver mas</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="backSuperman">
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="contenido">
+                <img src="img/perfil_superman.png" alt="superman">
+                <h2>SUPERMAN</h2>
+                <p class="texto">Superman nace en un mundo extraño a una especie tecnológicamente avanzada que se parece a los
+                    humanos. Poco después de nacer, su planeta se destruye en un cataclismo natural</p>
+               <a class="verMas" href="#">Ver mas</a>
+            </div>
+            </div> 
+       <span> <a href="#" class="botonMas"><span class="icon fas fa-plus"></span></a> </span>
     </main>
-
     <footer>
-        <p>Todos los derechos reservados a <span class="spanFoot"> Front end</span></p>
-
+        <p>Todos los derechos reservados a FRONT END 1</p>
     </footer>
-
 </body>
-
 </html>
